@@ -3,7 +3,7 @@ Plug 'tpope/vim-sensible'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'vim-syntastic/syntastic'
-Plug 'joshdick/onedark.vim'
+Plug 'dikiaap/minimalist'
 Plug 'gauteh/vim-cppman'
 Plug 'neomake/neomake'
 Plug 'vim-airline/vim-airline'
@@ -17,7 +17,8 @@ let g:cpp_class_decl_highlight = 1
 let g:Powerline_symbols = 'fancy'
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline_theme='onedark'
-source $HOME/.config/nvim/themes/onedark.vim
+
+
 " Show line numbers
 set number
 syntax on
@@ -52,3 +53,12 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
+
+set t_Co=256
+syntax on
+colorscheme minimalist
+let g:airline_theme='minimalist'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
+
