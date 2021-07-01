@@ -1,5 +1,5 @@
 bruh
-first install ripgrep and then and this to your .zshrc
+first install ripgrep and then put this to your .zshrc
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files'
   export FZF_DEFAULT_OPTS='-m --height 50% --border'
