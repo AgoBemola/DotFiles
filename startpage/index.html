@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Start</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <p class="center">
+      <img
+        src="./pfp_rounded.png"
+        width="150"
+        height="150"
+      />
+    </p>
+    <form id="form" role="search">
+      <input
+        type="search"
+        id="query"
+        name="q"
+        placeholder="Search DuckDuckGo..."
+      />
+    </form>
+    <script>
+      const f = document.getElementById("form");
+      const q = document.getElementById("query");
+      const search = "https://duckduckgo.com/?t=ffab&q=";
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = search + q.value + "&ia=web";
+        window.open(url, "_self");
+      }
+
+      f.addEventListener("submit", submitted);
+    </script>
+    <div id="links">
+      <nav>
+        <ul>
+          <h2>General</h2>
+          <li><a href="https://reddit.com/">Reddit</a></li>
+          <li><a href="https://youtube.com/">Youtube</a></li>
+          <li><a href="https://translate.google.com/">Translate</a></li>
+          <li><a href="https://wiki.gentoo.org/wiki/Main_Page#Documentation_topics">Gentoo Wiki</a></li>
+
+
+          <li><a href="https://www.wallpaperbetter.com/en">Wallpaper</a></li>
+
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <h2>Tech</h2>
+          <li><a href="https://github.com/">Github</a></li>
+
+          <li><a href="https://wiki.gentoo.org/wiki/Main_Page#Documentation_topics">Gentoo Wiki</a></li>
+
+
+          <li><a href="https://news.ycombinator.com/">Hacker News</a></li>
+          <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <h2>Subreddits</h2>
+          <li><a href="https://reddit.com/r/cpp/">r/cpp</a></li>
+
+          <li><a href="https://reddit.com/r/cpp_questions">r/cpp_questions</a></li>
+
+          <li><a href="https://reddit.com/r/unixporn/">r/unixporn</a></li>
+          <li>
+            <a href="https://reddit.com/r/terminal_porn/">r/terminal_porn</a>
+          </li>
+
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+	
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
