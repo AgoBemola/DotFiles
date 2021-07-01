@@ -4,6 +4,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'vim-syntastic/syntastic'
 Plug 'dikiaap/minimalist'
+Plug 'voldikss/vim-floaterm'
 Plug 'gauteh/vim-cppman'
 Plug 'neomake/neomake'
 Plug 'vim-airline/vim-airline'
@@ -60,5 +61,12 @@ colorscheme minimalist
 let g:airline_theme='minimalist'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
+
+
+" Configuration example
+let g:floaterm_keymap_new    = '<F7>'
+let g:floaterm_keymap_prev   = '<F8>'
+let g:floaterm_keymap_next   = '<F9>'
+let g:floaterm_keymap_toggle = '<F12>'
 
 
