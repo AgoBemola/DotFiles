@@ -35,7 +35,8 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set autoindent
-
+set spell
+set spelllang=en_us
 nnoremap <space>e :CocCommand explorer<CR>
 nnoremap <C-c> :!g++ -o  %:r.out % -std=c++20 <Enter>
 nnoremap <C-x> :!./%:r.out
