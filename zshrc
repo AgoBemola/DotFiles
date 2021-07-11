@@ -70,7 +70,7 @@ ZSH_THEME="wedisagree"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-completions)
+plugins=( git zsh-completions)
 autoload -U compinit && compinit
 source $ZSH/oh-my-zsh.sh
 
@@ -113,4 +113,30 @@ fi
 
 
 PS1=$'[ %{\e[0;33m%}%n%{\e[0m%}|%{\e[1;30m%}%M%{\e[0m%}|%B%d%b ] '
-RPROMPT="(%D{%d.%m.%y} | %*)"
+#RPROMPT="(%D{%d.%m.%y} | %*)"
+
+alias upgrade="sudo emerge --ask --changed-use --deep @world"
+alias update="sudo emerge --sync "
+alias delete="sudo emerge -avc "
+alias ls="colorls"
+export PATH="${PATH}:${HOME}/.local/bin"
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/gympie/.jcal/sources/libjalali/.libs/
+export LD_LIBRARY_PATH
+alias lg='lazygit'
+alias wallpaper="wal -i ~/Pictures/r_wall/photos/$(cat ~/cur_bg.txt)"
+
+
+
+
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+# Not supported in the "fish" shell.
+(cat ~/.cache/wal/sequences &)
+
+# Alternative (blocks terminal for 0-3ms)
+cat ~/.cache/wal/sequences
+
+# To add support for TTYs this line can be optionally added.
+source ~/.cache/wal/colors-tty.sh
+
