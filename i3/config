@@ -184,18 +184,20 @@ bindsym $mod+r mode "resize"
  #       status_command i3status
 #}
 gaps inner 15
-gaps outer 2
+gaps outer 4
 
 
-bindsym $mod+Shift+x exec i3lock
-exec_always feh --bg-scale ~/Pictures/4.png
+bindsym $mod+Shift+x exec i3lock -c 000000
+#exec_always feh --bg-scale ~/Pictures/25.jpg
 
 exec_always xrandr --output eDP1 --off --output DP1 --off --output HDMI1 --off --output HDMI2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 
+
+bindsym $mod+Control+z exec zeal
 bindsym $mod+Control+q exec qtcreator
 bindsym $mod+Control+f exec firefox-bin
 bindsym $mod+Control+d exec thunar
-exec_always  bash ~/.config/polybar/launch.sh  --forest
+exec_always  bash ~/.config/polybar/launch.sh --grayblocks
 exec_always "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:alt_shift_toggle"
 
 for_window [class="^.*"] border pixel 5
@@ -230,10 +232,10 @@ bindsym $mod+t exec ~/.local/bin/select_and_translate
 client.focused          #98c379  #285577 #FFFFFF  #FFFFFF  #9E9E9E
 
 ##### i3-gaps ##############
-for_window [class=".*"] border pixel 3 #*
+for_window [class=".*"] border pixel 1 #*
 gaps inner 10
 gaps outer 10
-#gaps horizontal 2
+#gaps horizontal 7
 
 
 #bar {
@@ -243,17 +245,20 @@ gaps outer 10
    # height 28
 
 #    status_command while ~/.config/scripts/statusline; do sleep 1; done
-    
+
    # colors {
   #      background #1E272EE5
  #       statusline #ACACACE5
 
 
 #        focused_workspace  #1E272EE5 #1E272EE5 #ACACACE5
- 
+
  #	active_workspace   #1E272EE5 #1E272EE5 #ACACACE5
  #       inactive_workspace #1E272EE5 #1E272EE5 #7C7C7CE5
  #       urgent_workspace   #1E272EE5 #1E272EE5 #A00050E5
  #       binding_mode       #1E272EE5 #1E272EE5 #A05000E5
  #   }
 #}
+
+exec_always --no-startup-id ~/.config/wall.sh
+exec_always --no-startup-id /home/gympie/.local/bin/wal -i ~/Pictures/r_wall/photos/$(cat ~/cur_bg.txt)
