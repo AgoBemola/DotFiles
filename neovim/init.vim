@@ -21,7 +21,7 @@ let g:airline_theme='onedark'
 
 
 " Show line numbers
-set number
+set relativenumber
 syntax on
 set backspace=indent,eol,start
 
