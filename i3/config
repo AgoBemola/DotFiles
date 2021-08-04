@@ -44,7 +44,7 @@ bindsym Mod4+period exec amixer set Master -q 5%+
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec xfce4-terminal --hide-menubar  --hide-borders
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -121,28 +121,70 @@ set $ws9 "9"
 set $ws10 "10"
 
 # switch to workspace
-bindsym $mod+1 workspace number $ws1
-bindsym $mod+2 workspace number $ws2
-bindsym $mod+3 workspace number $ws3
-bindsym $mod+4 workspace number $ws4
-bindsym $mod+5 workspace number $ws5
-bindsym $mod+6 workspace number $ws6
-bindsym $mod+7 workspace number $ws7
-bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
+#bindsym $mod+1 workspace number $ws1
+#bindsym $mod+2 workspace number $ws2
+#bindsym $mod+3 workspace number $ws3
+#bindsym $mod+4 workspace number $ws4
+#bindsym $mod+5 workspace number $ws5
+#bindsym $mod+6 workspace number $ws6
+#bindsym $mod+7 workspace number $ws7
+#bindsym $mod+8 workspace number $ws8
+#bindsym $mod+9 workspace number $ws9
+#bindsym $mod+0 workspace number $ws10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace number $ws1
-bindsym $mod+Shift+2 move container to workspace number $ws2
-bindsym $mod+Shift+3 move container to workspace number $ws3
-bindsym $mod+Shift+4 move container to workspace number $ws4
-bindsym $mod+Shift+5 move container to workspace number $ws5
-bindsym $mod+Shift+6 move container to workspace number $ws6
-bindsym $mod+Shift+7 move container to workspace number $ws7
-bindsym $mod+Shift+8 move container to workspace number $ws8
-bindsym $mod+Shift+9 move container to workspace number $ws9
-bindsym $mod+Shift+0 move container to workspace number $ws10
+#bindsym $mod+Shift+1 move container to workspace number $ws1
+#bindsym $mod+Shift+2 move container to workspace number $ws2
+#bindsym $mod+Shift+3 move container to workspace number $ws3
+#bindsym $mod+Shift+4 move container to workspace number $ws4
+#bindsym $mod+Shift+5 move container to workspace number $ws5
+#bindsym $mod+Shift+6 move container to workspace number $ws6
+#bindsym $mod+Shift+7 move container to workspace number $ws7
+#bindsym $mod+Shift+8 move container to workspace number $ws8
+#bindsym $mod+Shift+9 move container to workspace number $ws9
+#bindsym $mod+Shift+0 move container to workspace number $ws10
+#
+
+#new config
+
+set $firstMonitor HDMI2
+set $secondMonitor DP1
+
+
+workspace 1 output $firstMonitor
+workspace 2 output $firstMonitor
+workspace 3 output $firstMonitor
+workspace 4 output $firstMonitor
+workspace 5 output $firstMonitor
+workspace 6 output $secondMonitor
+workspace 7 output $secondMonitor
+workspace 8 output $secondMonitor
+workspace 9 output $secondMonitor
+workspace 10 output $secondMonitor
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1; workspace 1
+bindsym $mod+Shift+2 move container to workspace 2; workspace 2
+bindsym $mod+Shift+3 move container to workspace 3; workspace 3
+bindsym $mod+Shift+4 move container to workspace 4; workspace 4
+bindsym $mod+Shift+5 move container to workspace 5; workspace 5
+bindsym $mod+Shift+6 move container to workspace 6; workspace 6
+bindsym $mod+Shift+7 move container to workspace 7; workspace 7
+bindsym $mod+Shift+8 move container to workspace 8; workspace 8
+bindsym $mod+Shift+9 move container to workspace 9; workspace 9
+bindsym $mod+Shift+0 move container to workspace 10; workspace 10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -190,12 +232,13 @@ gaps outer 4
 bindsym $mod+Shift+x exec i3lock -c 000000
 #exec_always feh --bg-scale ~/Pictures/25.jpg
 
-exec_always xrandr --output eDP1 --off --output DP1 --off --output HDMI1 --off --output HDMI2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
+exec_always xrandr --output eDP1 --off --output DP1 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI1 --off --output HDMI2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
+
 
 
 bindsym $mod+Control+z exec zeal
 bindsym $mod+Control+q exec qtcreator
-bindsym $mod+Control+f exec firefox-bin
+bindsym $mod+Control+f exec firefox
 bindsym $mod+Control+d exec thunar
 exec_always  bash ~/.config/polybar/launch.sh --grayblocks
 exec_always "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:alt_shift_toggle"
@@ -229,7 +272,7 @@ bindsym $mod+Shift+u exec  redshift -P -O 5000
 bindsym $mod+Shift+w exec nmcli dev wifi connect "quiet" password "mahdimahan1379"
 
 bindsym $mod+t exec ~/.local/bin/select_and_translate
-client.focused          #98c379  #285577 #FFFFFF  #FFFFFF  #9E9E9E
+client.focused          #98c379  #285577 #FFFFFF  #FFFFFF  #FFEE58
 
 ##### i3-gaps ##############
 for_window [class=".*"] border pixel 1 #*
@@ -261,4 +304,4 @@ gaps outer 10
 #}
 
 exec_always --no-startup-id ~/.config/wall.sh
-exec_always --no-startup-id /home/gympie/.local/bin/wal -i ~/Pictures/r_wall/photos/$(cat ~/cur_bg.txt)
+#exec_always --no-startup-id /home/gympie/.local/bin/wal -i ~/Pictures/photos/$(cat ~/cur_bg.txt)
