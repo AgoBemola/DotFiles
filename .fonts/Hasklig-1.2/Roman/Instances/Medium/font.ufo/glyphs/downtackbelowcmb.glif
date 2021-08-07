@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="downtackbelowcmb" format="2">
+	<unicode hex="031E"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="269" y="-251" type="line"/>
+			<point x="331" y="-251" type="line"/>
+			<point x="331" y="-146" type="line"/>
+			<point x="419" y="-146" type="line"/>
+			<point x="419" y="-92" type="line"/>
+			<point x="181" y="-92" type="line"/>
+			<point x="181" y="-146" type="line"/>
+			<point x="269" y="-146" type="line"/>
+		</contour>
+	</outline>
+	<anchor name="_belowLC" x="300" y="-20"/>
+</glyph>

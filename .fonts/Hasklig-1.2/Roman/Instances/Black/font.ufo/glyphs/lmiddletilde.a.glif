@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lmiddletilde.a" format="2">
+	<advance width="600"/>
+	<outline>
+		<component base="l.a"/>
+		<component base="tildeoverlaycmb" xOffset="28" yOffset="110"/>
+	</outline>
+	<anchor name="aboveUC" x="324" y="730"/>
+	<anchor name="baseLC" x="334" y="0"/>
+	<anchor name="belowLC" x="324" y="-20"/>
+</glyph>

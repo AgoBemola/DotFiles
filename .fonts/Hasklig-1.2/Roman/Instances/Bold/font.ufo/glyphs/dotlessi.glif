@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dotlessi" format="2">
+	<unicode hex="0131"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="278" y="0" type="line"/>
+			<point x="425" y="0" type="line"/>
+			<point x="425" y="496" type="line"/>
+			<point x="79" y="496" type="line"/>
+			<point x="79" y="381" type="line"/>
+			<point x="278" y="381" type="line"/>
+		</contour>
+	</outline>
+	<anchor name="aboveLC" x="345" y="516"/>
+	<anchor name="baseLC" x="354" y="0"/>
+	<anchor name="belowLC" x="345" y="-20"/>
+	<anchor name="ogonekLC" x="352" y="0"/>
+</glyph>

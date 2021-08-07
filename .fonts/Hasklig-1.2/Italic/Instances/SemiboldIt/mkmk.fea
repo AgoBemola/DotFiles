@@ -1,0 +1,17 @@
+lookup MKMK_MARK_above {
+	lookupflag MarkAttachmentType @MC_above;
+
+	pos mark gravecmb <anchor 300 512> mark @MC_above;
+	pos mark acutecmb <anchor 300 512> mark @MC_above;
+	pos mark brevecmb <anchor 300 512> mark @MC_above;
+	pos mark brevecmb.cyr <anchor 300 512> mark @MC_above;
+	pos mark ringcmb <anchor 300 512> mark @MC_above;
+	pos mark circumflexcmb <anchor 385 735> mark @MC_above;
+	pos mark tildecmb <anchor 331 592> mark @MC_above;
+	pos mark macroncmb <anchor 323 552> mark @MC_above;
+	pos mark overlinecmb <anchor 323 552> mark @MC_above;
+	pos mark dotaccentcmb <anchor 382 726> mark @MC_above;
+	pos mark dieresiscmb <anchor 370 674> mark @MC_above;
+	pos mark hoicmb <anchor 360 692> mark @MC_above;
+} MKMK_MARK_above;
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="g.a" format="2">
+	<advance width="600"/>
+	<outline>
+		<component base="gscript"/>
+	</outline>
+	<anchor name="aboveLC" x="310" y="510"/>
+	<anchor name="belowLC" x="295" y="-215"/>
+</glyph>

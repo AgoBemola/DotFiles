@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dotlessjstrokehook" format="2">
+	<unicode hex="0284"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="79" y="225" type="line"/>
+			<point x="507" y="225" type="line"/>
+			<point x="521" y="291" type="line"/>
+			<point x="250" y="291" type="line"/>
+			<point x="91" y="285" type="line"/>
+		</contour>
+		<component base="esh"/>
+	</outline>
+</glyph>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dotlessi.a" format="2">
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="277" y="0" type="line"/>
+			<point x="392" y="0" type="line"/>
+			<point x="392" y="491" type="line"/>
+			<point x="112" y="491" type="line"/>
+			<point x="112" y="400" type="line"/>
+			<point x="277" y="400" type="line"/>
+		</contour>
+		<contour>
+			<point x="90" y="0" type="line"/>
+			<point x="564" y="0" type="line"/>
+			<point x="564" y="92" type="line"/>
+			<point x="90" y="92" type="line"/>
+		</contour>
+	</outline>
+	<anchor name="aboveLC" x="326" y="512"/>
+	<anchor name="baseLC" x="334" y="0"/>
+	<anchor name="belowLC" x="326" y="-20"/>
+	<anchor name="ogonekLC" x="334" y="0"/>
+</glyph>

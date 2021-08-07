@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lefttackbelowcmb" format="2">
+	<unicode hex="0318"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="330" y="-257" type="line"/>
+			<point x="414" y="-257" type="line"/>
+			<point x="414" y="-54" type="line"/>
+			<point x="330" y="-54" type="line"/>
+			<point x="330" y="-120" type="line"/>
+			<point x="213" y="-120" type="line"/>
+			<point x="213" y="-191" type="line"/>
+			<point x="330" y="-191" type="line"/>
+		</contour>
+	</outline>
+	<anchor name="_belowLC" x="300" y="-20"/>
+</glyph>

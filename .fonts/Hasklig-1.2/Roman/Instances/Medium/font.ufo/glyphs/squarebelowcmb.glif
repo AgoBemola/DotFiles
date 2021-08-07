@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="squarebelowcmb" format="2">
+	<unicode hex="033B"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="175" y="-242" type="line"/>
+			<point x="425" y="-242" type="line"/>
+			<point x="425" y="-74" type="line"/>
+			<point x="175" y="-74" type="line"/>
+		</contour>
+		<contour>
+			<point x="230" y="-198" type="line"/>
+			<point x="230" y="-117" type="line"/>
+			<point x="370" y="-117" type="line"/>
+			<point x="370" y="-198" type="line"/>
+		</contour>
+	</outline>
+	<anchor name="_belowLC" x="300" y="-20"/>
+</glyph>

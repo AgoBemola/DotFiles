@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="istroke.d" format="2">
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="74" y="221" type="line"/>
+			<point x="472" y="221" type="line"/>
+			<point x="485" y="287" type="line"/>
+			<point x="238" y="287" type="line"/>
+			<point x="85" y="282" type="line"/>
+		</contour>
+		<component base="dotlessi"/>
+	</outline>
+</glyph>

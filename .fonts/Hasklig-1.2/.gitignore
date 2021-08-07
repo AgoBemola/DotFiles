@@ -1,0 +1,13 @@
+# ignore build folder:
+target
+
+# ignore font binaries in master branch:
+Hasklig*.otf
+Hasklig*.ttf
+
+RomanMasters/colors_0
+RomanMasters/colors_1
+RomanMasters/colors_2
+ItalicMasters/colors_0
+ItalicMasters/colors_1
+ItalicMasters/colors_2
